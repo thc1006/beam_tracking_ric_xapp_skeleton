@@ -1,0 +1,6 @@
+services:
+  beam-tracking-xapp:
+    build: ..
+    volumes:
+      - ..:/app
+    command: ["python","-m","beam_tracking.xapp.main","--mode","sim","--config","configs/sim.yaml"]

@@ -1,0 +1,13 @@
+mode: sim
+log_level: INFO
+
+model:
+  variant: "rsrp_student"   # rsrp_student | csi_teacher (future)
+  device: "cpu"
+
+sim:
+  observation_path: "resources/sample/observation_stream.jsonl"
+  step_hz: 10
+
+rc:
+  enabled: false

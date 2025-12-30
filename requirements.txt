@@ -1,0 +1,9 @@
+numpy>=1.24
+pydantic>=2.6
+pyyaml>=6.0
+torch>=2.2
+grpcio>=1.62
+grpcio-tools>=1.62
+protobuf>=4.25
+pytest>=8.0
+ruff>=0.6

@@ -1,0 +1,22 @@
+[project]
+name = "beam-tracking-ric-xapp"
+version = "0.1.0"
+description = "Beam tracking ML/RL + OSC RIC integration skeleton (RC xApp gRPC + E2SM RC control)."
+requires-python = ">=3.10"
+dependencies = [
+  "numpy>=1.24",
+  "pydantic>=2.6",
+  "pyyaml>=6.0",
+  "torch>=2.2",
+  "grpcio>=1.62",
+  "grpcio-tools>=1.62",
+  "protobuf>=4.25",
+]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E","F","I","B","UP"]
+ignore = ["E501"]

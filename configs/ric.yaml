@@ -1,0 +1,17 @@
+mode: ric
+log_level: INFO
+
+model:
+  variant: "rsrp_student"
+  device: "cpu"
+
+ric:
+  ue_id_type: "imsi"   # imsi | rnti | custom
+  default_ue_id: "001010123456789"
+
+rc:
+  enabled: true
+  host: "rc-xapp"      # in K8s, service DNS
+  port: 50051
+  timeout_s: 2.0
+  retries: 3
